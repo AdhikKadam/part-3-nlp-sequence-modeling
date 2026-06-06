@@ -231,7 +231,7 @@ Basic Recurrent Neural Networks (RNNs) process sequences one step at a time, upd
 * *Example:* In the sentence "I grew up in France... [50 words later] ... so I speak fluent ___", a basic RNN will likely have forgotten "France" by the end.
 
 **2. How LSTMs help with memory**
-Long Short-Term Memory networks (LSTMs), which we used in Task 5, were invented to solve this exact issue. Instead of just a single hidden state, they introduce a core **Cell State**—think of it like a conveyor belt tha t runs straight down the entire sequence. They also introduce **Gates** (Forget, Input, and Output gates). These gates act like bouncers, explicitly learning *which* information is important enough to add to the conveyor belt, and *which* irrelevant information should be thrown away, preserving long-term context.
+Long Short-Term Memory networks (LSTMs), which we used in Task 5, were invented to solve this exact issue. Instead of just a single hidden state, they introduce a core **Cell State**—think of it like a conveyor belt tha git t runs straight down the entire sequence. They also introduce **Gates** (Forget, Input, and Output gates). These gates act like bouncers, explicitly learning *which* information is important enough to add to the conveyor belt, and *which* irrelevant information should be thrown away, preserving long-term context.
 
 **3. What Attention solves in Sequence-to-Sequence tasks**
 Even with LSTMs, early translation models suffered from a "bottleneck." They tried to compress an entire paragraph into one final hidden state vector before translating it.
